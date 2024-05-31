@@ -1,0 +1,36 @@
+.header {
+    background-color: #003287;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    transition: background-color 0.3s; 
+}
+
+
+.header img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; 
+    margin-left: 25px; 
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: lightblue; 
+}
