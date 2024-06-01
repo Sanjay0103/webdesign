@@ -4,8 +4,8 @@ import logo1 from "./os1.svg";
 import logo2 from "./os2.svg";
 import logo3 from "./os3.svg";
 import logo4 from "./os4.svg";
-import img from "./img2.webp";
-import img3 from "./img3.webp";
+import img from "./img13.jpg";
+import img3 from "./img14.jpg";
 
 function Content() {
   return (
@@ -63,31 +63,44 @@ function Content() {
       </div>
       <img className="img1" src={img3} alt="Example" />
       <div id="contact" className="contactus">
-          <h2>Contact <span className="hl3">us</span></h2>
-          <p>Whether you have a request, a query, or want to work with us, use the form below to get in touch with our team. </p>
+        <h2>Contact <span className="hl3">us</span></h2>
+        <p>Whether you have a request, a query, or want to work with us, use the form below to get in touch with our team.</p>
+        <div className="contact-container">
           <form>
-              <label>First Name*</label><br></br>
-              <input type="text" name="name" placeholder="First name" required="required"></input><br></br>
-              <label>Last Name*</label><br></br>
-              <input type="text" name="name" placeholder="Last name" required="required"></input><br></br>
-              <label>Email*</label><br></br>
-              <input type="email" name="name" placeholder="Email" required="required"></input><br></br>
-              <label>Message</label><br></br>
-              <textarea name="message" placeholder="Message"></textarea><br></br>
-              <button>Sumbit</button>
+            <label>First Name*</label><br />
+            <input type="text" name="firstName" placeholder="First name" required="required" /><br />
+            <label>Last Name*</label><br />
+            <input type="text" name="lastName" placeholder="Last name" required="required" /><br />
+            <label>Email*</label><br />
+            <input type="email" name="email" placeholder="Email" required="required" /><br />
+            <label>Message</label><br />
+            <textarea name="message" placeholder="Message"></textarea><br />
+            <button type="submit">Submit</button>
           </form>
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38145.41179152993!2d-1.49409!3d53.305866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487983927827779d%3A0x88264ad2fa75a883!2s3%20Barnes%20Ln%2C%20Dronfield%20Woodhouse%2C%20Dronfield%20S18%208YE%2C%20UK!5e0!3m2!1sen!2sus!4v1717220066878!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps Location"
+            ></iframe>
+          </div>
+        </div>
       </div>
       <footer>
         <div>
-        <h3>Location</h3>
-        <p>3A, Barens Lane,<br></br>Dron Field,S18 8YE,UK</p>
+          <h3>Location</h3>
+          <p>3A, Barens Lane,<br />Dronfield, S18 8YE, UK</p>
         </div>
         <div>
-        <h3>Contact us</h3>
-        <p>info@dataint.in</p>
+          <h3>Contact us</h3>
+          <p>info@dataint.in</p>
         </div>
       </footer>
-      
     </>
   );
 }

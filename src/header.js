@@ -4,17 +4,20 @@ import "./header.css";
 
 function Header() {
   
+
+ 
+
   return (
-    <nav>
-      <div className="header">
-        <img src={logo} alt="logo" />
+    <header className="header">
+      <img src={logo} alt="logo" />
+      <nav>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#contact" >Contact us</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
 
